@@ -36,6 +36,45 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "decimals",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -55,7 +94,7 @@
 			}
 		],
 		"devdoc": {
-			"custom:dev-run-script": "./scripts/deploy_with_ethers.ts",
+			"custom:dev-run-script": "./scripts/deploy_with_ethers.ts 基本符合ERC20规范的智能合约，形式上就可以表达一种资产，一种token，这种token能够用metamask钱包来进行操作 Sepolia-Account1: 0x9fB0CDD6C5138E146aA3f0215cff57A263B45670 Sepolia-Account1 部署后的合约地址：0x21ADC7ECfB0882F24eA54b9631B5356Cdb7dFdd2 Sepolia-Account2: 0x25D0b43D15e355aFF9856d19A622A25E2F043171",
 			"details": "Store & retrieve value in a variable",
 			"kind": "dev",
 			"methods": {},
@@ -85,11 +124,11 @@
 	},
 	"sources": {
 		"contracts/BalanceManager.sol": {
-			"keccak256": "0x67efe0df8d1a0df2d287c96c8011c60ade018b138108723c324c0e57db05ff3e",
+			"keccak256": "0xbc62f82df6e410e888b5fefd804765e33280f72eb3040bb586e1e3ccb28ffca1",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://a93c9f7a80eaa97ce1ab16c3e912d8be54cb61e9c2d734e27e0de82c00bb08a5",
-				"dweb:/ipfs/QmX9G1mSwJffupV1KQZ1ByRjPU2hcfsSHCwxL3jjcsFBY2"
+				"bzz-raw://f729610858e46df9c06c224d4aa024b959a2be770d9e3db8a735699a2cbd7485",
+				"dweb:/ipfs/QmWgd9SQgjf9RYSuzhnWfMQJ4KtKuUBwz91nKnA7nqkUdY"
 			]
 		}
 	},

@@ -9,12 +9,37 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "totalBalance",
+						"name": "initialSupply",
 						"type": "uint256"
 					}
 				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
 			},
 			{
 				"inputs": [
@@ -75,6 +100,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -87,14 +125,20 @@
 						"type": "uint256"
 					}
 				],
-				"name": "transfter",
-				"outputs": [],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
 		"devdoc": {
-			"custom:dev-run-script": "./scripts/deploy_with_ethers.ts 基本符合ERC20规范的智能合约，形式上就可以表达一种资产，一种token，这种token能够用metamask钱包来进行操作 Sepolia-Account1: 0x9fB0CDD6C5138E146aA3f0215cff57A263B45670 Sepolia-Account1 部署后的合约地址：0x21ADC7ECfB0882F24eA54b9631B5356Cdb7dFdd2 Sepolia-Account2: 0x25D0b43D15e355aFF9856d19A622A25E2F043171",
+			"custom:dev-run-script": "./scripts/deploy_with_ethers.ts 基本符合ERC20规范的智能合约，形式上就可以表达一种资产，一种token，这种token能够用metamask钱包来进行操作 Sepolia-Account1: 0x9fB0CDD6C5138E146aA3f0215cff57A263B45670 Sepolia-Account1 部署后的合约地址：0x8503c5E73A353ca66c4F6810fe347B325FbE5BAb Sepolia-Account2: 0x25D0b43D15e355aFF9856d19A622A25E2F043171 Sepolia-Account2 部署后的合约地址：0x722175AF8e33aD66E1f28Cc781786CB54174B37A",
 			"details": "Store & retrieve value in a variable",
 			"kind": "dev",
 			"methods": {},
@@ -124,11 +168,11 @@
 	},
 	"sources": {
 		"contracts/BalanceManager.sol": {
-			"keccak256": "0xbc62f82df6e410e888b5fefd804765e33280f72eb3040bb586e1e3ccb28ffca1",
+			"keccak256": "0xd95db26a2a8ffa131996ffd45218a1e430b93368998d42ffee8b3d668a938411",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://f729610858e46df9c06c224d4aa024b959a2be770d9e3db8a735699a2cbd7485",
-				"dweb:/ipfs/QmWgd9SQgjf9RYSuzhnWfMQJ4KtKuUBwz91nKnA7nqkUdY"
+				"bzz-raw://88b26c1957fce23c4467049395bd4345ef2ebe8e4106d57c26718cddd99a33b2",
+				"dweb:/ipfs/QmPQB9Uh53iC7feJa4XMzivYhatqSKr4rAiD25M962cBEQ"
 			]
 		}
 	},
